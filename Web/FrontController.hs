@@ -6,6 +6,7 @@ import Web.Controller.Prelude
 import Web.View.Layout (defaultLayout)
 
 -- Controller Imports
+import Web.Controller.Posts
 import Web.Controller.Static
 import Web.Controller.Posts
 
