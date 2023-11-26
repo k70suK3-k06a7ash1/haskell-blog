@@ -4,3 +4,8 @@ CREATE TABLE posts (
     title TEXT NOT NULL,
     body TEXT NOT NULL
 );
+CREATE TABLE articles (
+    id UUID DEFAULT uuid_generate_v4() PRIMARY KEY NOT NULL,
+    author TEXT NOT NULL,
+    content TEXT NOT NULL
+);

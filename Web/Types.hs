@@ -8,7 +8,6 @@ data WebApplication = WebApplication deriving (Eq, Show)
 
 data StaticController = WelcomeAction deriving (Eq, Show, Data)
 
-
 data PostsController
     = PostsAction
     | NewPostAction
@@ -17,4 +16,14 @@ data PostsController
     | EditPostAction { postId :: !(Id Post) }
     | UpdatePostAction { postId :: !(Id Post) }
     | DeletePostAction { postId :: !(Id Post) }
+    deriving (Eq, Show, Data)
+
+data ArticlesController
+    = ArticlesAction
+    | NewArticleAction
+    | ShowArticleAction { articleId :: !(Id Article) }
+    | CreateArticleAction
+    | EditArticleAction { articleId :: !(Id Article) }
+    | UpdateArticleAction { articleId :: !(Id Article) }
+    | DeleteArticleAction { articleId :: !(Id Article) }
     deriving (Eq, Show, Data)
