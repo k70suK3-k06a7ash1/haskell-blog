@@ -14,9 +14,6 @@ instance FrontController WebApplication where
         [ 
          startPage WelcomeAction
         , parseRoute @PostsController
-
-        -- Generator Marker
-        -- , parseRoute @PostsController
         ]
 
 instance InitControllerContext WebApplication where
