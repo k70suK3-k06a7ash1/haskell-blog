@@ -15,3 +15,6 @@ JS_FILES += ${IHP}/static/vendor/turbolinksMorphdom.js
 
 include ${IHP}/Makefile.dist
 
+
+up:
+	./start
